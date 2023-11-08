@@ -48,7 +48,7 @@ void resourceMaker::createResource(string name)
     file << "shared_scripts {" << endl;
     file << "    'shared/config.lua'," << endl;
     file << "};" << endl;
-
+    file.close();
 
     file.open(folderName+"client/client.lua",ios::out);
     file << "local QBCore = exports['qb-core']:GetCoreObject()" << endl;
